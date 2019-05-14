@@ -70,7 +70,7 @@ public class TokenField extends Field {
      *     attacks, this value must cease being valid after its first use.
      */
     public TokenField(String authorizationEndpoint, String scope,
-            String clientID, String redirectURI, String nonce) {
+            String clientID, String redirectURI, String nonce, String state) {
 
         // Init base field properties
         super(PARAMETER_NAME, "GUAC_OPENID_TOKEN");
@@ -82,7 +82,8 @@ public class TokenField extends Field {
                     + "&response_type=id_token"
                     + "&client_id=" + URLEncoder.encode(clientID, "UTF-8")
                     + "&redirect_uri=" + URLEncoder.encode(redirectURI, "UTF-8")
-                    + "&nonce=" + nonce;
+                    + "&nonce=" + nonce
+                    + "&state=" + state;
         }
 
         // Java is required to provide UTF-8 support

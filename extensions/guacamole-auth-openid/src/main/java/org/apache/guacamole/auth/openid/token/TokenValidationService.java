@@ -102,6 +102,12 @@ public class TokenValidationService {
                 return null;
             }
 
+            // Verify the state
+            //if (!stateService.check()) {
+            //    logger.info("Invalid state from OpenID provider.");
+            //    return null;
+            //}
+
             // Verify that we actually generated the nonce, and that it has not
             // already been used
             if (!nonceService.isValid(nonce)) {

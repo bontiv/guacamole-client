@@ -22,10 +22,12 @@ package org.apache.guacamole.auth.openid;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 import java.util.Arrays;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.guacamole.auth.openid.conf.ConfigurationService;
 import org.apache.guacamole.auth.openid.form.TokenField;
 import org.apache.guacamole.auth.openid.token.NonceService;
+import org.apache.guacamole.auth.openid.token.StateService;
 import org.apache.guacamole.auth.openid.token.TokenValidationService;
 import org.apache.guacamole.auth.openid.user.AuthenticatedUser;
 import org.apache.guacamole.GuacamoleException;
@@ -72,6 +74,12 @@ public class AuthenticationProviderService {
     private Provider<AuthenticatedUser> authenticatedUserProvider;
 
     /**
+     * Service for generate and validate states
+     */
+    @Inject
+    private StateService stateService;
+
+    /**
      * Returns an AuthenticatedUser representing the user authenticated by the
      * given credentials.
      *
@@ -90,6 +98,7 @@ public class AuthenticationProviderService {
             throws GuacamoleException {
 
         String username = null;
+        stateService.setRequest(credentials.getRequest());
 
         // Validate OpenID token in request, if present, and derive username
         HttpServletRequest request = credentials.getRequest();
@@ -101,7 +110,7 @@ public class AuthenticationProviderService {
 
         // If the username was successfully retrieved from the token, produce
         // authenticated user
-        if (username != null) {
+        if (username != null && stateService.check()) {
 
             // Create corresponding authenticated user
             AuthenticatedUser authenticatedUser = authenticatedUserProvider.get();
@@ -121,7 +130,8 @@ public class AuthenticationProviderService {
                     confService.getScope(),
                     confService.getClientID(),
                     confService.getRedirectURI(),
-                    nonceService.generate(confService.getMaxNonceValidity() * 60000L)
+                    nonceService.generate(confService.getMaxNonceValidity() * 60000L),
+                    stateService.generate()
                 )
 
             }))
