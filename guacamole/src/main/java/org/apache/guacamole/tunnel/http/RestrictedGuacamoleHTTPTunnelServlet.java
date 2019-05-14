@@ -37,6 +37,7 @@ import org.slf4j.LoggerFactory;
 @Singleton
 public class RestrictedGuacamoleHTTPTunnelServlet extends GuacamoleHTTPTunnelServlet {
 
+    private static final long serialVersionUID = -5921486580769375951L;
     /**
      * Service for handling tunnel requests.
      */

@@ -27,7 +27,9 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  * errors.
  */
 public class GuacamoleException extends Exception {
-    
+
+    static final long serialVersionUID = 484354415;
+
     /**
      * Creates a new GuacamoleException with the given message and cause.
      *

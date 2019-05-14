@@ -29,7 +29,8 @@ import org.apache.guacamole.language.TranslatableMessage;
  */
 public class QuickConnectException extends GuacamoleClientException
         implements Translatable {
-    
+
+    private static final long serialVersionUID = -8007327072865113030L;
     /**
      * A message that can be passed through the translation service
      * to provide information about the error that occurred.

@@ -28,6 +28,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleConnectionClosedException extends GuacamoleServerException {
 
+    private static final long serialVersionUID = 22102575810838742L;
+
     /**
      * Creates a new GuacamoleConnectionClosedException with the given message
      * and cause.

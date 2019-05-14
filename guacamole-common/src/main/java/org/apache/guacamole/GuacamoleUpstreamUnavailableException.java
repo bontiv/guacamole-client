@@ -27,6 +27,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleUpstreamUnavailableException extends GuacamoleUpstreamException {
 
+    private static final long serialVersionUID = 4836235103400249393L;
+
     /**
      * Creates a new GuacamoleUpstreamUnavailableException with the given
      * message and cause.

@@ -28,6 +28,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleSecurityException extends GuacamoleClientException {
 
+    private static final long serialVersionUID = 9141925321246868021L;
+
     /**
      * Creates a new GuacamoleSecurityException with the given message and cause.
      *

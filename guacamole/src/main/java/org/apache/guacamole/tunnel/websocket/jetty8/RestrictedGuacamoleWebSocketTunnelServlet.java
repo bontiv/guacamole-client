@@ -34,6 +34,7 @@ import org.apache.guacamole.tunnel.TunnelRequest;
 @Singleton
 public class RestrictedGuacamoleWebSocketTunnelServlet extends GuacamoleWebSocketTunnelServlet {
 
+    private static final long serialVersionUID = -6716820254318035274L;
     /**
      * Service for handling tunnel requests.
      */

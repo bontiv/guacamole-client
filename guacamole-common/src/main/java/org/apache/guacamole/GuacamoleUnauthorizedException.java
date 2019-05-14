@@ -29,6 +29,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleUnauthorizedException extends GuacamoleSecurityException {
 
+    private static final long serialVersionUID = 6419145770145631136L;
+
     /**
      * Creates a new GuacamoleUnauthorizedException with the given message and cause.
      *

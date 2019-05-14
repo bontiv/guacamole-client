@@ -27,6 +27,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleUpstreamNotFoundException extends GuacamoleUpstreamException {
 
+    private static final long serialVersionUID = 2536266371311065860L;
+
     /**
      * Creates a new GuacamoleUpstreamNotFoundException with the given message
      * and cause.

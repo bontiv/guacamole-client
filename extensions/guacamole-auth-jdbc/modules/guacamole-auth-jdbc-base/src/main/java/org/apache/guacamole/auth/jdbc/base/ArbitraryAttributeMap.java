@@ -31,6 +31,8 @@ import java.util.Map;
  */
 public class ArbitraryAttributeMap extends HashMap<String, String> {
 
+    private static final long serialVersionUID = 4658596941379311220L;
+
     /**
      * Creates a new ArbitraryAttributeMap containing the name/value pairs
      * within the given collection of model objects.

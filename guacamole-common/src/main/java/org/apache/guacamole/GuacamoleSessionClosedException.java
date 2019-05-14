@@ -27,6 +27,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleSessionClosedException extends GuacamoleUpstreamException {
 
+    private static final long serialVersionUID = 4947528503868101356L;
+
     /**
      * Creates a new GuacamoleSessionClosedException with the given message and
      * cause.

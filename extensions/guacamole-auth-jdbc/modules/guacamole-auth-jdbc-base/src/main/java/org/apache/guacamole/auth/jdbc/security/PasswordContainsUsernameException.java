@@ -25,6 +25,8 @@ package org.apache.guacamole.auth.jdbc.security;
  */
 public class PasswordContainsUsernameException extends PasswordPolicyException {
 
+    private static final long serialVersionUID = -2740234388380101781L;
+
     /**
      * Creates a new PasswordContainsUsernameException with the given
      * human-readable message. The translatable message is already defined.

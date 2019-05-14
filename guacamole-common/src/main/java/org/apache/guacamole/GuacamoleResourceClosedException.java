@@ -27,6 +27,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleResourceClosedException extends GuacamoleClientException {
 
+    private static final long serialVersionUID = -5675287632906719486L;
+
     /**
      * Creates a new GuacamoleResourceClosedException with the given message
      * and cause.

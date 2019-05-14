@@ -30,6 +30,7 @@ import org.apache.guacamole.protocol.GuacamoleConfiguration;
  */
 public class ModeledGuacamoleConfiguration extends GuacamoleConfiguration {
 
+    private static final long serialVersionUID = 3370746213700169659L;
     /**
      * The user this configuration belongs to. Access is based on his/her
      * permission settings.

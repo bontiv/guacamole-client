@@ -27,6 +27,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleSessionConflictException extends GuacamoleUpstreamException {
 
+    private static final long serialVersionUID = 4208067558733931053L;
+
     /**
      * Creates a new GuacamoleSessionConflictException with the given message
      * and cause.

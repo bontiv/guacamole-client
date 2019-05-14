@@ -29,6 +29,7 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleStreamException extends GuacamoleServerException {
 
+    private static final long serialVersionUID = 8886849202220503884L;
     /**
      * The error condition reported by the intercepted Guacamole stream.
      */

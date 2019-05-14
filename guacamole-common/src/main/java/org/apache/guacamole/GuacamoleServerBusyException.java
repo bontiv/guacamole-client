@@ -28,6 +28,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleServerBusyException extends GuacamoleServerException {
 
+    private static final long serialVersionUID = 1597262443761820078L;
+
     /**
      * Creates a new GuacamoleServerBusyException with the given message and cause.
      *

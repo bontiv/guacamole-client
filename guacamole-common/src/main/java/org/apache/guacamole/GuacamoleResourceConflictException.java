@@ -29,6 +29,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleResourceConflictException extends GuacamoleClientException {
 
+    private static final long serialVersionUID = 3910427739170280417L;
+
     /**
      * Creates a new GuacamoleResourceConflictException with the given message and cause.
      *

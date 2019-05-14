@@ -30,6 +30,7 @@ import org.apache.guacamole.language.TranslatableMessage;
 public class PasswordPolicyException extends GuacamoleClientException
     implements Translatable {
 
+    private static final long serialVersionUID = 1269988502401574516L;
     /**
      * A translatable message which, after being passed through the translation
      * system, describes the policy violation that occurred.

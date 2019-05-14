@@ -47,6 +47,7 @@ import org.slf4j.LoggerFactory;
  */
 public abstract class GuacamoleHTTPTunnelServlet extends HttpServlet {
 
+    private static final long serialVersionUID = -5422563887784469943L;
     /**
      * Logger for this class.
      */

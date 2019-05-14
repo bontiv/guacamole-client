@@ -26,6 +26,8 @@ package org.apache.guacamole.auth.jdbc.security;
  */
 public class PasswordRequiresSymbolException extends PasswordPolicyException {
 
+    private static final long serialVersionUID = 218485730222972348L;
+
     /**
      * Creates a new PasswordRequiresSymbolException with the given
      * human-readable message. The translatable message is already defined.

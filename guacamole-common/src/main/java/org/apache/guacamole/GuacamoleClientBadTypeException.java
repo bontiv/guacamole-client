@@ -28,6 +28,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleClientBadTypeException extends GuacamoleClientException {
 
+    private static final long serialVersionUID = 1671805331875680511L;
+
     /**
      * Creates a new GuacamoleClientBadTypeException with the given message and cause.
      *

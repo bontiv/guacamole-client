@@ -26,6 +26,8 @@ package org.apache.guacamole.auth.jdbc.security;
  */
 public class PasswordRequiresMultipleCaseException extends PasswordPolicyException {
 
+    private static final long serialVersionUID = -3020610516642799914L;
+
     /**
      * Creates a new PasswordRequiresMultipleCaseException with the given
      * human-readable message. The translatable message is already defined.

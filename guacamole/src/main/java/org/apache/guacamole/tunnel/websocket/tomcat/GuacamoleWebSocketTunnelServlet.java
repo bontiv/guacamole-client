@@ -62,6 +62,7 @@ public abstract class GuacamoleWebSocketTunnelServlet extends WebSocketServlet {
      * first element of the received instruction.
      */
     private static final String PING_OPCODE = "ping";
+    private static final long serialVersionUID = 1167823594295304576L;
 
     /**
      * Logger for this class.

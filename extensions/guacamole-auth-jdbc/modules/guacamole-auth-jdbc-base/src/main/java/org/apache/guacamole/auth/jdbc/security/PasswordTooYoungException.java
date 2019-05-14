@@ -29,6 +29,8 @@ import org.apache.guacamole.language.TranslatableMessage;
  */
 public class PasswordTooYoungException extends PasswordPolicyException {
 
+    private static final long serialVersionUID = 3779620128546418231L;
+
     /**
      * Creates a new PasswordTooYoungException with the given human-readable
      * message. The translatable message is already defined.

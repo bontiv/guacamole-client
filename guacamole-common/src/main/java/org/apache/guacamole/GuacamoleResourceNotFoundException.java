@@ -28,6 +28,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleResourceNotFoundException extends GuacamoleClientException {
 
+    private static final long serialVersionUID = 7777634650078312913L;
+
     /**
      * Creates a new GuacamoleResourceNotFoundException with the given message
      * and cause.

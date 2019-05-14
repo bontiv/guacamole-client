@@ -28,6 +28,8 @@ import org.apache.guacamole.language.TranslatableMessage;
  */
 public class PasswordMinimumLengthException extends PasswordPolicyException {
 
+    private static final long serialVersionUID = -5235561293484399260L;
+
     /**
      * Creates a new PasswordMinimumLengthException with the given
      * human-readable message. The translatable message is already defined.

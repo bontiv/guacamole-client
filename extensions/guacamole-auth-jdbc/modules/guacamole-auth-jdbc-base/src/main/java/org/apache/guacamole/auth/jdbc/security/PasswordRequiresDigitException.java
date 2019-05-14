@@ -26,6 +26,8 @@ package org.apache.guacamole.auth.jdbc.security;
  */
 public class PasswordRequiresDigitException extends PasswordPolicyException {
 
+    private static final long serialVersionUID = -980073255401915366L;
+
     /**
      * Creates a new PasswordRequiresDigitException with the given
      * human-readable message. The translatable message is already defined.

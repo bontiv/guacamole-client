@@ -28,6 +28,8 @@ import org.apache.guacamole.language.TranslatableMessage;
  */
 public class PasswordReusedException extends PasswordPolicyException {
 
+    private static final long serialVersionUID = -2215609118912401187L;
+
     /**
      * Creates a new PasswordReusedException with the given human-readable
      * message. The translatable message is already defined.

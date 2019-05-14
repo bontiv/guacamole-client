@@ -28,6 +28,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleUnsupportedException extends GuacamoleServerException {
 
+    private static final long serialVersionUID = -5970827238163355144L;
+
     /**
      * Creates a new GuacamoleUnsupportedException with the given message and cause.
      *

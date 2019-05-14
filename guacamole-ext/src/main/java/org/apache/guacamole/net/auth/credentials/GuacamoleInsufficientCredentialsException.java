@@ -28,6 +28,8 @@ package org.apache.guacamole.net.auth.credentials;
  */
 public class GuacamoleInsufficientCredentialsException extends GuacamoleCredentialsException {
 
+    private static final long serialVersionUID = 6634942434180375295L;
+
     /**
      * Creates a new GuacamoleInsufficientCredentialsException with the given
      * message, cause, and associated credential information.

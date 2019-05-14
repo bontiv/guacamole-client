@@ -28,6 +28,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleUpstreamTimeoutException extends GuacamoleUpstreamException {
 
+    private static final long serialVersionUID = -3351617149075015777L;
+
     /**
      * Creates a new GuacamoleUpstreamException with the given message and
      * cause.

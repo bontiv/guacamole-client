@@ -30,6 +30,8 @@ import org.apache.guacamole.protocol.GuacamoleStatus;
  */
 public class GuacamoleClientOverrunException extends GuacamoleClientException {
 
+    private static final long serialVersionUID = 5159605363266195550L;
+
     /**
      * Creates a new GuacamoleClientOverrunException with the given message and cause.
      *

@@ -47,6 +47,7 @@ public class ResourceServlet extends HttpServlet {
      * stream of a resource to the output stream of a request.
      */
     private static final int BUFFER_SIZE = 10240;
+    private static final long serialVersionUID = -7237527113053849861L;
 
     /**
      * The resource to serve for every GET request.
