@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="guacamole-playback-example:war">
+    <output-path>$PROJECT_DIR$/doc/guacamole-playback-example/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>guacamole-playback-example</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="guacamole-playback-example-1.0.0.war">
+      <element id="artifact" artifact-name="guacamole-playback-example:war exploded" />
+    </root>
+  </artifact>
+</component>

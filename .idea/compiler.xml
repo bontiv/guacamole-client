@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="guacamole-auth-duo" />
+        <module name="guacamole" />
+        <module name="guacamole-auth-jdbc-postgresql" />
+        <module name="guacamole-common" />
+        <module name="guacamole-auth-jdbc-mysql" />
+        <module name="guacamole-playback-example" />
+        <module name="guacamole-auth-header" />
+        <module name="guacamole-auth-jdbc-sqlserver" />
+        <module name="guacamole-auth-quickconnect" />
+        <module name="guacamole-auth-ldap" />
+        <module name="guacamole-auth-jdbc-base" />
+        <module name="guacamole-auth-totp" />
+        <module name="guacamole-auth-cas" />
+        <module name="guacamole-auth-openid" />
+        <module name="guacamole-example" />
+        <module name="guacamole-auth-jdbc-dist" />
+        <module name="guacamole-ext" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="guacamole" target="1.8" />
+      <module name="guacamole-auth-cas" target="1.8" />
+      <module name="guacamole-auth-duo" target="1.8" />
+      <module name="guacamole-auth-header" target="1.8" />
+      <module name="guacamole-auth-jdbc" target="1.5" />
+      <module name="guacamole-auth-jdbc-base" target="1.8" />
+      <module name="guacamole-auth-jdbc-dist" target="1.5" />
+      <module name="guacamole-auth-jdbc-mysql" target="1.8" />
+      <module name="guacamole-auth-jdbc-postgresql" target="1.8" />
+      <module name="guacamole-auth-jdbc-sqlserver" target="1.8" />
+      <module name="guacamole-auth-ldap" target="1.8" />
+      <module name="guacamole-auth-openid" target="1.8" />
+      <module name="guacamole-auth-quickconnect" target="1.8" />
+      <module name="guacamole-auth-totp" target="1.8" />
+      <module name="guacamole-client" target="1.5" />
+      <module name="guacamole-common" target="1.6" />
+      <module name="guacamole-common-js" target="1.5" />
+      <module name="guacamole-example" target="1.8" />
+      <module name="guacamole-ext" target="1.8" />
+      <module name="guacamole-playback-example" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="guacamole" options="-Xlint:all" />
+      <module name="guacamole-auth-cas" options="-Xlint:all" />
+      <module name="guacamole-auth-duo" options="-Xlint:all" />
+      <module name="guacamole-auth-header" options="-Xlint:all" />
+      <module name="guacamole-auth-jdbc-base" options="-Xlint:all" />
+      <module name="guacamole-auth-jdbc-mysql" options="-Xlint:all" />
+      <module name="guacamole-auth-jdbc-postgresql" options="-Xlint:all" />
+      <module name="guacamole-auth-jdbc-sqlserver" options="-Xlint:all" />
+      <module name="guacamole-auth-ldap" options="-Xlint:all" />
+      <module name="guacamole-auth-openid" options="-Xlint:all" />
+      <module name="guacamole-auth-quickconnect" options="-Xlint:all" />
+      <module name="guacamole-auth-totp" options="-Xlint:all" />
+      <module name="guacamole-common" options="-Xlint:all" />
+      <module name="guacamole-example" options="-Xlint:all" />
+      <module name="guacamole-ext" options="-Xlint:all" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.webjars.bower:blob-polyfill:1.0.20150320">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/webjars/bower/blob-polyfill/1.0.20150320/blob-polyfill-1.0.20150320.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/webjars/bower/blob-polyfill/1.0.20150320/blob-polyfill-1.0.20150320-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/webjars/bower/blob-polyfill/1.0.20150320/blob-polyfill-1.0.20150320-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

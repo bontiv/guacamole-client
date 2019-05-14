@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="guacamole-example:war">
+    <output-path>$PROJECT_DIR$/doc/guacamole-example/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>guacamole-example</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="guacamole-example-1.0.0.war">
+      <element id="artifact" artifact-name="guacamole-example:war exploded" />
+    </root>
+  </artifact>
+</component>

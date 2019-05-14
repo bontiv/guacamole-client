@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="GuacServer">
+    <serverData>
+      <paths name="GuacServer">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/extensions/guacamole-auth-openid/target" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="*/" />
+            <excludedPath local="true" path="*.tar.gz" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

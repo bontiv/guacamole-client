@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/guacamole/guacamole.iml" filepath="$PROJECT_DIR$/guacamole/guacamole.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-cas/guacamole-auth-cas.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-cas/guacamole-auth-cas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-duo/guacamole-auth-duo.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-duo/guacamole-auth-duo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-header/guacamole-auth-header.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-header/guacamole-auth-header.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-jdbc/guacamole-auth-jdbc.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-jdbc/guacamole-auth-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-base/guacamole-auth-jdbc-base.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-base/guacamole-auth-jdbc-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-dist/guacamole-auth-jdbc-dist.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-dist/guacamole-auth-jdbc-dist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-mysql/guacamole-auth-jdbc-mysql.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-mysql/guacamole-auth-jdbc-mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-postgresql/guacamole-auth-jdbc-postgresql.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-postgresql/guacamole-auth-jdbc-postgresql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-sqlserver/guacamole-auth-jdbc-sqlserver.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-sqlserver/guacamole-auth-jdbc-sqlserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-ldap/guacamole-auth-ldap.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-ldap/guacamole-auth-ldap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-openid/guacamole-auth-openid.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-openid/guacamole-auth-openid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-quickconnect/guacamole-auth-quickconnect.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-quickconnect/guacamole-auth-quickconnect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/guacamole-auth-totp/guacamole-auth-totp.iml" filepath="$PROJECT_DIR$/extensions/guacamole-auth-totp/guacamole-auth-totp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guacamole-client.iml" filepath="$PROJECT_DIR$/guacamole-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guacamole-common/guacamole-common.iml" filepath="$PROJECT_DIR$/guacamole-common/guacamole-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guacamole-common-js/guacamole-common-js.iml" filepath="$PROJECT_DIR$/guacamole-common-js/guacamole-common-js.iml" />
+      <module fileurl="file://$PROJECT_DIR$/doc/guacamole-example/guacamole-example.iml" filepath="$PROJECT_DIR$/doc/guacamole-example/guacamole-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guacamole-ext/guacamole-ext.iml" filepath="$PROJECT_DIR$/guacamole-ext/guacamole-ext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/doc/guacamole-playback-example/guacamole-playback-example.iml" filepath="$PROJECT_DIR$/doc/guacamole-playback-example/guacamole-playback-example.iml" />
+    </modules>
+  </component>
+</project>
