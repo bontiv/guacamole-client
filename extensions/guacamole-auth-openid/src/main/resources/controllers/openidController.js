@@ -32,10 +32,9 @@ angular.module('guacOpenID').controller('guacOpenIDController', ['$scope',
 /**
  * Controller for OpenID errors.
  */
-angular.module('guacOpenID').controller('guacOpenIDErrorController', ['$scope',
-    function guacOpenIDController($scope) {
+angular.module('guacOpenID').controller('guacOpenIDErrorController', ['$scope', '$routeParams',
+    function guacOpenIDErrorController($scope, $routeParams) {
 
         // Redirect to authorization URI
-        window.location = $scope.field.authorizationURI;
-
+        $scope.ERROR_DESCRIPTION = $routeParams.description.replace(/\+/g, ' ');
     }]);
