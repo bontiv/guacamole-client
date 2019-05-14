@@ -28,3 +28,14 @@ angular.module('guacOpenID').controller('guacOpenIDController', ['$scope',
     window.location = $scope.field.authorizationURI;
 
 }]);
+
+/**
+ * Controller for OpenID errors.
+ */
+angular.module('guacOpenID').controller('guacOpenIDErrorController', ['$scope',
+    function guacOpenIDController($scope) {
+
+        // Redirect to authorization URI
+        window.location = $scope.field.authorizationURI;
+
+    }]);

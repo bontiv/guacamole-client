@@ -182,6 +182,19 @@ public class ConfigurationService {
 
     };
 
+
+    /**
+     * The group attribute of OpenID provider. Only used when the OpenID provider
+     * provide groups. This groups can be used by the database extension backend.
+     */
+    private static final StringGuacamoleProperty OPENID_GROUP_ATTRIBUTE =
+            new StringGuacamoleProperty() {
+                @Override
+                public String getName() {
+                    return "openid-group-attribute";
+                }
+            };
+
     /**
      * The Guacamole server environment.
      */
@@ -359,4 +372,17 @@ public class ConfigurationService {
         return environment.getProperty(OPENID_MAX_NONCE_VALIDITY, DEFAULT_MAX_NONCE_VALIDITY);
     }
 
+
+    /**
+     * Return the group attribute of the openID provider.
+     *
+     * @return
+     *      The group attribute for fetching groups.
+     *
+     * @throws GuacamoleException
+     *    If guacamole.properties cannot be parsed.
+     */
+    public String getGroupAttribute() throws GuacamoleException {
+        return environment.getProperty(OPENID_GROUP_ATTRIBUTE, null);
+    }
 }

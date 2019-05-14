@@ -51,4 +51,10 @@ angular.module('index').config(['$routeProvider',
 
     });
 
+    // Show OpenID error
+    $routeProvider.when('/error=:error&error_description=:description', {
+        templateUrl   : 'app/ext/guac-openid/templates/openidError.html',
+        controller : 'guacOpenIDErrorController',
+        module     : 'guacOpenID'
+    });
 }]);
