@@ -32,6 +32,8 @@ import org.jose4j.keys.resolvers.HttpsJwksVerificationKeyResolver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
+
 /**
  * Service for validating ID tokens forwarded to us by the client, verifying
  * that they did indeed come from the OpenID service.
@@ -54,6 +56,11 @@ public class TokenValidationService {
      */
     @Inject
     private NonceService nonceService;
+
+    /**
+     * Groups claims
+     */
+    private String[] userGroups;
 
     /**
      * Validates and parses the given ID token, returning the username contained
@@ -102,17 +109,19 @@ public class TokenValidationService {
                 return null;
             }
 
-            // Verify the state
-            //if (!stateService.check()) {
-            //    logger.info("Invalid state from OpenID provider.");
-            //    return null;
-            //}
-
             // Verify that we actually generated the nonce, and that it has not
             // already been used
             if (!nonceService.isValid(nonce)) {
                 logger.debug("Rejected OpenID token with invalid/old nonce.");
                 return null;
+            }
+
+            // Get groups if available
+            String groupAttribute = confService.getGroupAttribute();
+            userGroups = new String[0];
+
+            if (groupAttribute != null && claims.hasClaim(groupAttribute)) {
+                userGroups = claims.getStringListClaimValue(groupAttribute).toArray(userGroups);
             }
 
             // Pull username from claims
@@ -141,6 +150,15 @@ public class TokenValidationService {
         // Could not retrieve username from JWT
         return null;
 
+    }
+
+    /**
+     * Get all user groups from JWT token.
+     * @return
+     *  List of user groups.
+     */
+    public String[] getGroups() {
+        return userGroups;
     }
 
 }

@@ -115,6 +115,8 @@ public class AuthenticationProviderService {
             // Create corresponding authenticated user
             AuthenticatedUser authenticatedUser = authenticatedUserProvider.get();
             authenticatedUser.init(username, credentials);
+            // TODO: Register groups :
+            tokenService.getGroups();
             return authenticatedUser;
 
         }

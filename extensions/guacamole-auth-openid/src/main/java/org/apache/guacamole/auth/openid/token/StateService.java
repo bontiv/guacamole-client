@@ -24,6 +24,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.Base64;
 import java.util.Random;
 
@@ -41,13 +42,20 @@ public class StateService {
     private final Logger logger = LoggerFactory.getLogger(StateService.class);
 
 
-    private static String COOKIE_NAME = "openid_state";
+    /**
+     * Variable name in session for state.
+     */
+    private static String STATE_VARIABLE_NAME = "openid_state";
+
+    /**
+     * Request from browser.
+     */
     private HttpServletRequest request;
 
     /**
      * Generate a new state
      * @return
-     * state
+     * state string
      */
     public String generate() {
         Random sr = new Random();
@@ -55,29 +63,44 @@ public class StateService {
         sr.nextBytes(seed);
 
         String data = new String(Base64.getEncoder().encode(seed));
+
+        // remove + character which are interpreted as spaces.
         data = data.replaceAll("/\\+/", "");
-        this.request.getSession().setAttribute(this.COOKIE_NAME, data);
+
+        this.request.getSession().setAttribute(this.STATE_VARIABLE_NAME, data);
         return data;
     }
 
+    /**
+     * Set request object to get session object and state parameters.
+     * @param request
+     */
     public void setRequest(HttpServletRequest request) {
         this.request = request;
     }
 
+    /**
+     * Check the session state.
+     * @return
+     *   True if state is valid.
+     */
     public boolean check() {
         String state = this.request.getParameter("state");
-        String requireState = (String)this.request.getSession().getAttribute(this.COOKIE_NAME);
+        HttpSession session = this.request.getSession();
+        String requireState = (String)session.getAttribute(STATE_VARIABLE_NAME);
 
         if (state == null) {
-            this.logger.info("No OpenID state provided by parameter.");
+            logger.info("No OpenID state provided by parameter.");
             return false;
         }
 
         if (!state.equals(requireState)) {
-            this.logger.info(String.format("Bad state provided: Expected <%s>, get <%s>", requireState, state));
+            logger.info(String.format("Bad state provided: Expected <%s>, get <%s>", requireState, state));
             return false;
         }
-        this.logger.debug("Allow state parameter");
+
+        logger.debug("Allow state parameter.");
+        session.removeAttribute(STATE_VARIABLE_NAME);
         return true;
     }
 
